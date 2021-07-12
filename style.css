@@ -102,7 +102,6 @@ article {
   justify-content: space-around;
   align-items: center;
   margin: 20px 0;
-  counter-reset: 1;
 }
 .fonction__titre {
   font-size: 1.5em;
@@ -120,9 +119,7 @@ article {
   border-radius: 20px;
   border: none;
 }
-.fonction__btn::after {
-  counter-increment: compteListe 1;
-  content: counter(compteListe) " ";
+.fonction__btn--numb {
   width: 0;
   height: 0;
   border: 10px solid #9356DC;
@@ -132,10 +129,14 @@ article {
   align-items: center;
   justify-content: center;
   position: relative;
-  right: 90%;
+  top: -53px;
+  right: 6px;
 }
 .fonction__btn:hover {
   background: #9356DC60;
+}
+.fonction__btn:hover i {
+  color: #9356DC;
 }
 
 .resto {
