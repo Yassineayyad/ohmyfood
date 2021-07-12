@@ -86,6 +86,9 @@ article {
   color: white;
   box-shadow: 0px 1px 10px gray;
   transform: scale(1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .reservation__btn:hover {
   transform: scale(0.9);
@@ -262,9 +265,10 @@ h2 {
 .restau__icon {
   font-size: 1.2em;
   position: relative;
-  left: 140px;
+  left: 275px;
   bottom: 30px;
   color: gray;
+  width: 50px;
 }
 .restau__icon .fas {
   display: none;
