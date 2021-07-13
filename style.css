@@ -1,3 +1,6 @@
+/* ********** couleur ********* */
+/* **************font************ */
+/* ****************bg color*************** */
 @keyframes carte {
   0% {
     transform: translateY(100px);
@@ -6,6 +9,30 @@
   100% {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
+  }
+  90% {
+    color: #FF79DA;
+    text-shadow: none;
+  }
+  100% {
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
+  }
+}
+@keyframes loader {
+  0% {
+    z-index: 10000;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
   }
 }
 body {
@@ -501,6 +528,7 @@ h2 {
   left: 11px;
 }
 
+/* *****************************************************chargement******************************************* */
 .chargement {
   position: fixed;
   height: 100%;
@@ -553,31 +581,6 @@ h2 {
 }
 .lettre:nth-child(10) {
   animation-delay: 1s;
-}
-
-@keyframes flash {
-  0% {
-    color: #9356DC;
-    text-shadow: 0 0 7px #9356DC;
-  }
-  90% {
-    color: #FF79DA;
-    text-shadow: none;
-  }
-  100% {
-    color: #9356DC;
-    text-shadow: 0 0 7px #9356DC;
-  }
-}
-@keyframes loader {
-  0% {
-    z-index: 10000;
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
